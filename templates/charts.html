@@ -6,12 +6,18 @@
 <main class="container">
   <h1 class="text-center my-4">Books app</h1>
   <div class="row">
-    <div class="col-md-6 col-sm-10 mx-auto p-0">
-      <a href="/">Books</a>
+    <a href="/">Books</a>
+
+    <div class="col-md-6 col-xs-6 col-sm-10">
       <div class="">
 		    <canvas id="chartJSContainer" width="500" height="450"></canvas>
       </div>
     </div>
+    <div class="col-md-6 col-xs-6 col-sm-10">
+          <div class="">
+		    <canvas id="piechartJSContainer" width="500" height="450"></canvas>
+      </div>
+     </div>
   </div>
 
 </main>
@@ -55,6 +61,27 @@
 	}
 
 var ctx = document.getElementById('chartJSContainer');
+var lineChart = new Chart(ctx, options);
+
+var options = {
+  type: 'pie',
+  data: {
+    labels: data['genre'],
+    datasets: [{
+      backgroundColor: [
+        "#2ecc71",
+        "#3498db",
+        "#95a5a6",
+        "#9b59b6",
+        "#f1c40f",
+        "#e74c3c",
+        "#34495e"
+      ],
+      data: data['values']
+    }]
+  }
+}
+var ctx = document.getElementById('piechartJSContainer');
 var lineChart = new Chart(ctx, options);
 
 </script>
