@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% block main %}
+<div id="react-wrapper">
+<main class="container">
+  <h1 class="text-center my-4">Books app</h1>
+  <div class="row">
+    <div class="col-md-6 col-sm-10 mx-auto p-0">
+      <a href="/">Books</a>
+      <div class="">
+		    <canvas id="chartJSContainer" width="500" height="450"></canvas>
+      </div>
+    </div>
+  </div>
+
+</main>
+</div>
+{% endblock main %}
+
+{% block javascript %}
+<script type="text/javascript">
+	var data  = {{jsonified_props|safe}}
+	console.log(data)
+	var props = JSON.stringify(data)
+	console.log(props, "hello")
+	var options = {
+	  type: 'bar',
+    responsive: false,
+
+	  data: {
+	    labels: data['genre'],
+	    datasets: [
+		    {
+		      label: '# of Books',
+		      data: data['values'],
+	      	borderWidth: 1,
+	        backgroundColor: 'rgba(255, 0, 15, 0.54)'
+	    	}
+			]
+		},
+		options: {
+		  responsive: false,
+			scales: {
+	      yAxes: [{
+	        ticks: {
+	          beginAtZero: true
+	        }
+	      }]
+	    },
+			label: {
+			  fontSize: 10
+			}
+		}
+	}
+
+var ctx = document.getElementById('chartJSContainer');
+var lineChart = new Chart(ctx, options);
+
+</script>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% block main %}
+  <div id="react-wrapper">
+  {{ rendered_react|safe }}</div>
+{% endblock main %}
+
+{% block javascript %}
+  <span id="jsxComponent" data-component="{{ jsx_component }}"></span>
+<script id="props" type="application/json">{{ jsonified_props|safe }}</script>
+ {% render_bundle 'main' %}
+{% endblock %}

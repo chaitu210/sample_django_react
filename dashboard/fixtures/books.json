@@ -1,0 +1,86 @@
+[
+   {
+      "model":"dashboard.book",
+      "pk":1,
+      "fields":{
+         "title":"Wikibooks: Radiation Oncology/NHL/CLL-SLL",
+         "url":"https://en.wikibooks.org/wiki/Radiation_Oncology/NHL/CLL-SLL",
+         "abstract":"Chronic Lymphocytic Leukemia and Small Lymphocytic Lymphoma (CLL/SLL)",
+         "body_text":"Front Page: Radiation Oncology | RTOG Trials | Randomized Trials Non-Hodgkin lymphoma: Main Page...",
+         "body_html":"780",
+         "genre":"Fiction"
+      }
+   },
+   {
+      "model":"dashboard.book",
+      "pk":2,
+      "fields":{
+         "title":"Wikibooks: Romanian/Lesson 9",
+         "url":"https://en.wikibooks.org/wiki/Romanian/Lesson_9",
+         "abstract":"==Buturi/Beverages==",
+         "body_text":"Buturi/Beverages[edit | edit source] Tea : Ceai Milk : Lapte Water : Ap (If you are in Romania, an...",
+         "body_html":"qws asx",
+         "genre":"Fiction"
+      }
+   },
+   {
+      "model":"dashboard.book",
+      "pk":3,
+      "fields":{
+         "title":"Wikibooks: Karrigell",
+         "url":"https://en.wikibooks.org/wiki/Karrigell",
+         "abstract":"==Buturi/Beverages==",
+         "body_text":"Buturi/Beverages[edit | edit source] Tea : Ceai Milk : Lapte Water : Ap (If you are in Romania, an...",
+         "body_html":"qws asx",
+         "genre":"Novel"
+      }
+   },
+   {
+      "model":"dashboard.book",
+      "pk":4,
+      "fields":{
+         "title":"Wikibooks: The Pyrogenesis Engine/0 A.D./GuiSession",
+         "url":"https://en.wikibooks.org/wiki/The_Pyrogenesis_Engine/0_A.D./GuiSession",
+         "abstract":"==Buturi/Beverages==",
+         "body_text":"Buturi/Beverages[edit | edit source] Tea : Ceai Milk : Lapte Water : Ap (If you are in Romania, an...",
+         "body_html":"qws asx",
+         "genre":"Novel"
+      }
+   },
+   {
+      "model":"dashboard.book",
+      "pk":5,
+      "fields":{
+         "title":"Wikibooks: LMIs in Control/pages/Exterior Conic Sector Lemma",
+         "url":"https://en.wikibooks.org/wiki/LMIs_in_Control/pages/Exterior_Conic_Sector_Lemma",
+         "abstract":"==Buturi/Beverages==",
+         "body_text":"Buturi/Beverages[edit | edit source] Tea : Ceai Milk : Lapte Water : Ap (If you are in Romania, an...",
+         "body_html":"qws asx",
+         "genre":"Novel"
+      }
+   },
+   {
+      "model":"dashboard.book",
+      "pk":6,
+      "fields":{
+         "title":"Wikibooks: Laptop Computer Models/Dell/Latitude D830",
+         "url":"https://en.wikibooks.org/wiki/Laptop_Computer_Models/Dell/Latitude_D830",
+         "abstract":"==Bauturi/Beverages==",
+         "body_text":"Bauturi/Beverages[edit | edit source] Tea : Ceai Milk : Lapte Water : Apa (If you are in Romania, an...",
+         "body_html":"qws asx",
+         "genre":"Thriller"
+      }
+   },
+   {
+      "model":"dashboard.book",
+      "pk":7,
+      "fields":{
+         "title":"Wikibooks: Desktop Computer Models/Dell/Latitude D830",
+         "url":"https://en.wikibooks.org/wiki/Laptop_Computer_Models/Dell/Latitude_D830",
+         "abstract":"==Băuturi/Beverages==",
+         "body_text":"Băuturi/Beverages[edit | edit source] Tea : Ceai Milk : Lapte Water : Apă (If you are in Romania, an...",
+         "body_html":"qws asx",
+         "genre":"Thriller"
+      }
+   }
+]
